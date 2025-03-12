@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vedant Hondre - Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleContactOptions() {
+      const options = document.getElementById('contact-options');
+      options.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-3xl mx-auto p-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl shadow-2xl mt-10 text-white">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold">Vedant Hondre</h1>
+      <p class="text-lg mt-2">Certified White Hat Hacker | Cybercrime Investigator | Cybersecurity Researcher</p>
+    </div>
+
+    <div class="mt-6 border-t border-white pt-6">
+      <h2 class="text-2xl font-semibold">About Me</h2>
+      <p class="mt-2">
+        I'm a 16-year-old cybersecurity expert from Maharashtra, India. With over 50 solved cybercrime cases, I specialize in cybercrime investigation and research. Currently, I work with the Cyber Seytonic Investigation Bureau (CSIB) in Jammu and Kashmir. I actively collaborate with police departments and Law Enforcement Agencies (LEAs) across India to combat cyber threats and enhance digital security.
+      </p>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="text-2xl font-semibold">Key Projects</h2>
+      <ul class="list-disc list-inside mt-2">
+        <li>
+          <span class="font-medium">OSINT Telegram Bot:</span> Developer of <span class="font-semibold">@Osintby_shubhya_bot</span>, a premium OSINT tool for LEAs and police personnel.
+        </li>
+        <li>
+          <span class="font-medium">OSINT Web Platform:</span> Currently building an advanced OSINT platform similar to Epieos.
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="text-2xl font-semibold">Contact & Collaborations</h2>
+      <p class="mt-2">
+        For collaborations, professional inquiries, or cybercrime assistance, feel free to reach out.
+      </p>
+      <div class="mt-4 text-center">
+        <button onclick="toggleContactOptions()" class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">Contact Me</button>
+        <div id="contact-options" class="hidden mt-4 space-x-4">
+          <a href="mailto:vedanthondre@gmail.com" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Email Me</a>
+          <a href="https://t.me/shubhya_2703" target="_blank" class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">Message on Telegram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
