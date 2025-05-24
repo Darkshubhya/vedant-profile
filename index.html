@@ -10,33 +10,80 @@
       const options = document.getElementById('contact-options');
       options.classList.toggle('hidden');
     }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
   </script>
+  <style>
+    .dark {
+      background-color: #0f172a; /* Tailwind slate-900 */
+      color: #f8fafc; /* Tailwind slate-50 */
+    }
+    .dark .bg-gradient-to-r {
+      background: linear-gradient(to right, #1e293b, #334155); /* dark gradient */
+    }
+    .dark .border-white {
+      border-color: #94a3b8; /* Tailwind slate-400 */
+    }
+  </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 transition-colors duration-300">
   <div class="max-w-3xl mx-auto p-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl shadow-2xl mt-10 text-white">
     <div class="text-center">
-      <h1 class="text-4xl font-bold">Vedant Hondre</h1>
+      <!-- Profile Image -->
+      <img src="WhatsApp Image 2025-05-24 at 17.16.15_a658a1b0.jpg" alt="Vedant Hondre" class="mx-auto rounded-full w-40 h-40 object-cover shadow-lg border-4 border-white">
+      
+      <h1 class="text-4xl font-bold mt-4">Vedant Hondre</h1>
       <p class="text-lg mt-2">Certified White Hat Hacker | Cybercrime Investigator | Cybersecurity Researcher</p>
     </div>
 
     <div class="mt-6 border-t border-white pt-6">
       <h2 class="text-2xl font-semibold">About Me</h2>
       <p class="mt-2">
-        I'm a 16-year-old Cybersecurity Researcher & Jr. Detective from Maharashtra, India. With over 10+ solved cybercrime cases, I specialize in cybercrime investigation and research. Currently, I work with the Cyber Seytonic Investigation Bureau (CSIB) in Jammu and Kashmir. I actively collaborate with police departments and Law Enforcement Agencies (LEAs) across India, including Maharashtra Police, to combat cyber threats and enhance digital security. My work has contributed to solving numerous high-profile cybercrime cases, supporting both state and national law enforcement agencies.
+        I'm a 16-year-old Cybersecurity Researcher & Jr. Detective from Maharashtra, India. With over 10+ solved cybercrime cases, I specialize in cybercrime investigation and research. Currently, I work with Maharashtra Police . I actively collaborate with police departments and Law Enforcement Agencies (LEAs) across India, including Maharashtra Police, to combat cyber threats and enhance digital security. My work has contributed to solving numerous high-profile cybercrime cases, supporting both state and national law enforcement agencies.
       </p>
     </div>
 
     <div class="mt-6">
-      <h2 class="text-2xl font-semibold">Key Projects</h2>
-      <ul class="list-disc list-inside mt-2">
-        <li>
-          <span class="font-medium">OSINT Telegram Bot:</span> Developer of <span class="font-semibold">@Osintby_shubhya_bot</span>, a premium OSINT tool for LEAs and police personnel.
-        </li>
-        <li>
-          <span class="font-medium">OSINT Web Platform:</span> Currently building an advanced OSINT platform similar to Epieos.
-        </li>
-      </ul>
-    </div>
+  <h2 class="text-2xl font-semibold">Key Projects</h2>
+  <ul class="list-disc list-inside mt-2 space-y-2">
+    <li>
+      <span class="font-medium">Swargate Police Station Cyber Investigation Website:</span> 
+      Developed a dedicated platform for Swargate Police Station, providing free investigation tools, resources, and tutorials for police officers and investigators. 
+      (<a href="https://swargatepolicestation.infy.uk" class="underline text-blue-200" target="_blank">swargatepolicestation.infy.uk</a>)
+    </li>
+    <li>
+      <span class="font-medium">Vehicle OSINT Lookup Tool:</span> 
+      A web-based tool for instant vehicle information extraction (RC details, owner info, etc.) designed for LEAs, with print and PDF report features.
+    </li>
+    <li>
+      <span class="font-medium">IP to Information Lookup Tool:</span> 
+      Converts any IP address into a detailed report with ISP, location, and other metadata. Includes a dark mode, access code protection, and copy feature.
+    </li>
+    <li>
+      <span class="font-medium">OSINT Telegram Bot:</span> 
+      Developer of <span class="font-semibold">@Osintby_shubhya_bot</span>, a premium OSINT tool for LEAs and cyber professionals.
+    </li>
+    <li>
+      <span class="font-medium">OSINT Web Platform (In Progress):</span> 
+      Currently building an advanced OSINT web platform similar to Epieos, combining multiple OSINT tools into a single web-based solution.
+    </li>
+  </ul>
+</div>
+
+
+  <div class="mt-6 border-t border-white pt-6">
+  <h2 class="text-2xl font-semibold">Achievements</h2>
+  <ul class="list-disc list-inside mt-2 space-y-2">
+    <li>Successfully solved 10+ cybercrime cases including blackmailing, online harassment, and data breaches.</li>
+    <li>Certified White Hat Hacker with multiple cybersecurity certifications.</li>
+    <li>Completed 10+ professional certifications in Cybersecurity and Ethical Hacking.</li>
+    <li>Recognized and appreciated by Swargate Police Station and Maharashtra Police for outstanding cyber investigations.</li>
+    <li>Contributor to advanced cybercrime investigation techniques used by LEAs across India.</li>
+  </ul>
+</div>
+
 
     <div class="mt-6">
       <h2 class="text-2xl font-semibold">Contact & Collaborations</h2>
@@ -50,6 +97,10 @@
           <a href="https://t.me/shubhya_2703" target="_blank" class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">Message on Telegram</a>
         </div>
       </div>
+    </div>
+
+    <div class="mt-6 text-center">
+      <button onclick="toggleDarkMode()" class="px-6 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">Toggle Dark Mode</button>
     </div>
   </div>
 </body>
